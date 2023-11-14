@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+body{
+    height: 100vh;
+   background-image: url('https://images.wallpaperscraft.com/image/single/man_tourist_backpack_114250_3840x2160.jpg');
+   background-size: cover;
+   background-image: 200px 500px;
+}
+li{
+ list-style:none ;
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-size: 1rem;
+}
+a:hover{
+    color: rgb(245, 156, 73);
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+
+}
+.navbar .toggle-button{
+    color: rgb(14, 15, 15);
+    font-size: 1 .5rem;
+    cursor: pointer;
+    display: none;
+    
+}
+.action-button{
+    background-color: rgb(79, 93, 97);
+    color:whitesmoke;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale .2ease;
+}
+.action-button:hover{
+    scale:1.05;
+    color:rgb(245, 156, 73) ;
+}
+.action-button:active {
+    scale: 0.95;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top:60px ;
+    width: 300px;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+.dropdown-menu .open{
+    height: 240px;
+}
+.dropdown-menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown-menu .action-button{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width:992px){
+    .navbar .links,
+    .navbar .action-button{
+        display: none;
+    }
+    .navbar .toggle-button{
+        display: block;
+    }
+    .dropdown-menu{
+        display: block;
+
+    }
+}
+.para{
+  margin-left: 30px;
+  color:rgb(211, 216, 216);
+  margin-bottom: 100px;
+}
+
+.h1{
+     font-family: 'Buffalo', sans-serif;
+    margin-top: 115px;
+    margin-left: 50px;
+    color: whitesmoke;
+    font-size: 50px
+}
+.read-more-button{
+margin-bottom: 600px;
+margin-left: 50px;
+background-color: rgb(215, 220, 221);
+color:rgb(8, 7, 7);
+padding: 0.5rem 1rem;
+border: none;
+outline: none;
+border-radius: 20px;
+font-size: 0.8rem;
+font-weight: bold;
+cursor: pointer;
+transition: scale .2ease;
+}
+
+.read-more-button:active{
+    scale: 0.98;
+}
+.read-more-button:hover{
+    scale:1.05;
+    color:rgb(245, 156, 73);
+
+}
+
+@media(max-width:576p){
+.dropdown-menu{
+    left: 2rem;
+    width: unset;
+}
+}
+
